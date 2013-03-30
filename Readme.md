@@ -23,7 +23,7 @@ var tree = new kdTree(points, distance, dimensions);
 // Result is an array with *count* elements.
 // Each element is an array with two components: the searched point and
 // the distance to it.
-tree.nearest(point, count, [maxDistance]);
+tree.nearest(point, count, [filterFunction, maxDistance]);
 
 // Insert a new point into the tree. Must be consistent with previous
 // contents.
